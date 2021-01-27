@@ -54,10 +54,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="u2netonly.html">Serverless<span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="u2netonly.html">U2net-ss<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="app_u2net_EC2.html">GPU</a>
+            <a class="nav-link" href="u2net.html">Scanner-ss</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="app_u2net_EC2.html">Scanner-gpu</a>
           </li>
           </ul>
         </div>
@@ -145,7 +148,7 @@
                   body64 : image64.split(',')[1],
                 }
         console.log(JSON.stringify(data));
-        let response = await fetch('https://u2net-occqj5qb5a-ey.a.run.app', { //'https://u2net-only-occqj5qb5a-ey.a.run.app'
+        let response = await fetch('https://u2net-only-occqj5qb5a-ey.a.run.app', { //'https://u2net-only-occqj5qb5a-ey.a.run.app'
                 method: 'POST', // or 'PUT'
                 headers: {
                     'Content-Type': 'application/json',
